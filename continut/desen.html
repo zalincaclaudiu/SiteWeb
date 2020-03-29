@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Desen</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" type="img" href="favicon.ico">
+      </head>
+    <body>
+        <nav>
+            <a class="navB" href="index.html">Acasă</a>
+            <a class="navB" href="inregistreaza.html">Înregistrează</a>
+            <a class="navB" href="video.html">Video</a>
+            <a class="navB active" href="desen.html">Desen</a>
+            <a class="navB" href="invat_js.html">Învăţ JS</a>
+            <a class="navB" href="despre_html.html">Despre</a>
+        </nav>
+        <br/><br/>
+        <svg width="1400" height="400">
+            <!--<polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />-->
+            <defs>
+                <radialGradient id="gradB" cx="0%" cy="45%" r="50%" fx="15%" fy="33%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(0,0,34);stop-opacity:1" />
+                  </radialGradient>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#a88a99;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(64,64,64);stop-opacity:1" />
+                  </linearGradient>
+                  <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#ff9900;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#663d00;stop-opacity:1" />
+                  </linearGradient>
+                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#0080ff;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#009933;stop-opacity:1" />
+                    <stop offset="90%" style="stop-color:#1a3300;stop-opacity:1" />
+                  </linearGradient>
+                  <radialGradient id="grad4" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:#cc3300;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#330d00;stop-opacity:1" />
+                  </radialGradient>
+                  <linearGradient id="grad5" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ff9966;stop-opacity:1" />
+                    <stop offset="25%" style="stop-color:#ffdccc;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#e64900;stop-opacity:1" />
+                    <stop offset="75%" style="stop-color:#ffdccc;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff9966;stop-opacity:1" />
+                  </linearGradient>
+                  <linearGradient id="grad6" x1="25%" y1="10%" x2="50%" y2="90%">
+                    <stop offset="0%" style="stop-color:#996600;stop-opacity:1" />
+                    <stop offset="15%" style="stop-color:#ffc34d;stop-opacity:1" />
+                    <stop offset="40%" style="stop-color:#4d3300;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#ffeecc;stop-opacity:1" />
+                    <stop offset="60%" style="stop-color:#4d3300;stop-opacity:1" />
+                    <stop offset="85%" style="stop-color:#ffc34d;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#996600;stop-opacity:1" />
+                  </linearGradient>
+                  <radialGradient id="grad7" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:#001a4d;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#6699ff;stop-opacity:1" />
+                  </radialGradient>
+                  <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#0033cc;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#00134d;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00061a;stop-opacity:1" />
+                  </linearGradient>
+                  <linearGradient id="grad9" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#804000;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#1a0d00;stop-opacity:1" />
+                  </linearGradient>
+                  <radialGradient id="sun" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:#cc0000;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#ff6600;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffff4d;stop-opacity:1" />
+                  </radialGradient>
+                  <filter id="f1" height="200%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2"/> <!-- stdDeviation is how much to blur -->
+                    <feOffset dx="1" dy="1" result="offsetblur"/> <!-- how much to offset -->
+                    <feComponentTransfer>
+                      <feFuncA type="linear" slope="0.5"/> <!-- slope is the opacity of the shadow -->
+                    </feComponentTransfer>
+                    <feMerge> 
+                      <feMergeNode/> <!-- this contains the offset blurred image -->
+                      <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+                    </feMerge>
+                  </filter>
+            </defs>
+            <rect width="1335" height="400"
+            fill="url(#gradB)"></rect>
+            <polygon points="150,300 130,250 170,250" style="fill:#ffff4d"></polygon>
+            <polygon points="76,279 83,226 118,246" style="fill:#ffff4d"></polygon>
+            <polygon points="21,225 54,182 74,217" style="fill:#ffff4d"></polygon>
+            <polygon points="1,150 50,131 51,170" style="fill:#ffff4d"></polygon>
+            <polygon points="21,76 74,83 54,118" style="fill:#ffff4d"></polygon>
+            <polygon points="75,21 118,54 83,74" style="fill:#ffff4d"></polygon>
+            <polygon points="150,1 169,50 130,51" style="fill:#ffff4d"></polygon>
+            <polygon points="224,21 217,74 182,54" style="fill:#ffff4d"></polygon>
+            <polygon points="279,75 246,118 226,83" style="fill:#ffff4d"></polygon>
+            <polygon points="299,150 250,169 249,130" style="fill:#ffff4d"></polygon>
+            <polygon points="279,224 226,217 246,182" style="fill:#ffff4d"></polygon>
+            <polygon points="225,279 182,246 217,226" style="fill:#ffff4d"></polygon>
+            <polygon points="150,235 108,223 77,192 66,150 77,108 108,77 150,66 192,77 223,108 234,150 223,192 192,223 " style="fill:url(#sun)"></polygon>
+
+            <circle cx="350" cy="180" r="15" fill="url(#grad1)" filter="url(#f1)"></circle>
+            <circle cx="425" cy="180" r="40"  fill="url(#grad2)" filter="url(#f1)"></circle>
+            <circle cx="535" cy="180" r="50"  fill="url(#grad3)" filter="url(#f1)"></circle>
+            <circle cx="650" cy="180" r="45"  fill="url(#grad4)" filter="url(#f1)"></circle>
+            <circle cx="785" cy="180" r="70"  fill="url(#grad5)" filter="url(#f1)"></circle>
+            <circle cx="935" cy="180" r="60"  fill="url(#grad6)" filter="url(#f1)"></circle>
+            <circle cx="1065" cy="180" r="50"  fill="url(#grad7)" filter="url(#f1)"></circle>
+            <circle cx="1182" cy="180" r="47"  fill="url(#grad8)" filter="url(#f1)"></circle>
+            <circle cx="1269" cy="180" r="10"  fill="url(#grad9)" filter="url(#f1)"></circle>
+
+        </svg>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Înregistrează</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/formular.css">
+    </head>
+    <body>
+        <nav>
+            <a class="navB" href="index.html">Acasă</a>
+            <a class="navB active" href="inregistreaza.html">Înregistrează</a>
+            <a class="navB" href="video.html">Video</a>
+            <a class="navB" href="desen.html">Desen</a>
+            <a class="navB" href="invat_js.html">Învăţ JS</a>
+            <a class="navB" href="despre_html.html">Despre</a>
+        </nav><br/><br/>
+
+        <form>
+            <fieldset>
+                <legend>Informaţii generale:</legend>
+                <label >Nume Utilizator:</label>
+                <input type="text"/><br/>
+                <label>Parola:</label>
+                <input type="text"/><br/>
+                <label>Nume:</label>
+                <input type="text"/><br/>
+                <label>Prenume:</label>
+                <input type="text"/><br/>
+                <label>Email:</label>
+                <input type="email"/><br/>
+                <label>Tel:</label>
+                <input type="tel"/><br/>
+            </fieldset>
+            <fieldset>
+                <legend>Informaţii personale:</legend>
+                <label>Sexul:</label>
+                <select id="sex">
+                    <option value="Masculin">M</option>
+                    <option value="Feminin">F</option>
+                </select><br/>
+                <label>Mâncarea preferată:</label>
+                <input list="mâncare"/>
+                <datalist id="mâncare">
+                    <option value="">Supă</option>
+                    <option value="">Sarmale</option>
+                </datalist><br/>
+                <label >Culoarea preferată:</label>
+                <input type="color"/><br/>
+                <label>Data naşterii:</label>
+                <input type="date"/><br/>
+                <label>Ora naşterii:</label>
+                <input type="time"/><br/>
+                <label>Vârsta:</label>
+                <input type="range"/><br/>
+                <label>Adresa paginii personale:</label>
+                <input type="url"/><br/>
+                <label>Descriere:</label>
+                <textarea rows="3"></textarea><br/>
+            </fieldset>
+            <input type="button" value="Înregistrează" disabled/>
+        </form>
+    </body>
+</html>

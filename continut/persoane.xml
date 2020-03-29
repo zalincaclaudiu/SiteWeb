@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume,prenume,varsta,adresa,statut,facultate,profil,an,cunostinte)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT adresa (#PCDATA)>
+<!ELEMENT statut (#PCDATA)>
+<!ELEMENT facultate (#PCDATA)>
+<!ELEMENT an (#PCDATA)>
+<!ELEMENT profil (#PCDATA)>
+<!ELEMENT cunostinte (limbaje)>
+<!ELEMENT limbaje (limbaj+)>
+<!ELEMENT limbaj (#PCDATA)>
+<!ATTLIST persoana id CDATA #REQUIRED>
+]>
+-->
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>Str.nationala</adresa>
+        <statut>student</statut>
+        <facultate>Info</facultate>
+        <profil>main</profil>
+        <an>2</an>
+        <cunostinte>
+            <limbaje>
+                <limbaj>Python</limbaj>
+                <limbaj>javascript</limbaj>
+            </limbaje>
+        </cunostinte>
+    </persoana>
+
+    <persoana id="2">
+        <nume>Zalinca</nume>
+        <prenume>Claudiu</prenume>
+        <varsta>21</varsta>
+        <adresa>Str.Sosea</adresa>
+        <statut>student</statut>
+        <facultate>AC</facultate>
+        <profil>CTI</profil>
+        <an>3</an>
+        <cunostinte>
+            <limbaje>
+                <limbaj>C/C++</limbaj>
+                <limbaj>Java</limbaj>
+                <limbaj>Python</limbaj>
+            </limbaje>
+        </cunostinte>
+    </persoana>
+
+    <persoana id="3">
+        <nume>Jelescu</nume>
+        <prenume>George</prenume>
+        <varsta>21</varsta>
+        <adresa>Str.Mircea</adresa>
+        <statut>Sofware engineer</statut>
+        <facultate>AC</facultate>
+        <profil>CTI</profil>
+        <an>3</an>
+        <cunostinte>
+            <limbaje>
+                <limbaj>C/C++</limbaj>
+                <limbaj>Python</limbaj>
+            </limbaje>
+        </cunostinte>
+    </persoana>
+
+    <persoana id="4">
+        <nume>Balan</nume>
+        <prenume>Marius</prenume>
+        <varsta>21</varsta>
+        <adresa>Str.Nat</adresa>
+        <statut>Software engineer</statut>
+        <facultate>AC</facultate>
+        <profil>CTI</profil>
+        <an>3</an>
+        <cunostinte>
+            <limbaje>
+                <limbaj>C/C++</limbaj>
+                <limbaj>Java</limbaj>
+            </limbaje>
+        </cunostinte>
+    </persoana>
+</persoane>

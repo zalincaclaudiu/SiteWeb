@@ -1,0 +1,14 @@
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume,prenume,varsta,adresa,statut,facultate,profil,an,cunostinte)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT adresa (#PCDATA)>
+<!ELEMENT statut (#PCDATA)>
+<!ELEMENT facultate (#PCDATA)>
+<!ELEMENT an (#PCDATA)>
+<!ELEMENT profil (#PCDATA)>
+<!ELEMENT cunostinte (limbaje)>
+<!ELEMENT limbaje (limbaj+)>
+<!ELEMENT limbaj (#PCDATA)>
+<!ATTLIST persoana id CDATA #REQUIRED>
